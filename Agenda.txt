@@ -1,0 +1,23 @@
+Comandos
+
+	alert('') <- abre um pop-up de mensagem.
+	confirm('') <- abre um pop-up de confirmação(ok/cancelar).
+	prompt('') <- abre um pop-up de digitação.
+
+Anotações
+
+	Um servidor guarda arquivos e os manda para o cliente quando solicitado, e o cliente é a maquina que o usuário utiliza.
+
+
+	HTML(Hyper Text Markup Language): configura o conteúdo do site.
+
+	CSS(Cascading Style Sheet): configura o design do site.
+
+	JavaScript: Configura a programação do lado do cliente do site.
+
+
+	JavaScript criado pela NetScape.
+
+	Java é diferente de JavaScript, mas ambas são criadas a partir da linguagem C.
+
+	ECMAScript é a versão padronizada do JavaScript.
