@@ -1,8 +1,33 @@
+Regras de identificadores
+	Podem começar com letra, "$" ou "_"
+	Não podem começar com números
+	É possível usar letras ou números
+	É possível usar acentos e símbolos
+	Não podem conte espaços
+	Não podem ser palavras reservadas
+
+Sintaxe
+	"=" équivale a "recebe", sinal de atribuição
+	String fica dentro de aspas("",'',``)
+
 Comandos
 
-	alert('') <- abre um pop-up de mensagem.
-	confirm('') <- abre um pop-up de confirmação(ok/cancelar).
-	prompt('') <- abre um pop-up de digitação.
+	{alert('')} <- abre um pop-up de mensagem.
+	{confirm('')} <- abre um pop-up de confirmação(ok/cancelar).
+	{prompt('')} <- abre um pop-up de digitação.
+
+	{var} <- atribui variáveis
+
+Tipos de variáveis
+	Number <- são números inteiros ou reais
+	String <- são conjuntos de carácteres
+	boolean <- são variáveis lógicas | verdadeiro ou falso
+
+Dicas
+	Variáveis
+		Maiúsculas e minúsculas fazem diferença
+		Tente escolher nomes coerentes para as variáveis
+		Evite se tornar um 'programador alfabeto' ou um 'programador contador'
 
 Anotações
 
