@@ -9,16 +9,22 @@ Regras de identificadores
 Sintaxe
 	"=" équivale a "recebe", sinal de atribuição
 	String fica dentro de aspas("",'',``)
+	"+" Faz uma junção lógica, ou adição dependendo da situação
 
-Comandos
-
+Comandos [] <- opcional {} <- comando
+	//, ou, /*{}*/ <- comentário
 	{alert('')} <- abre um pop-up de mensagem.
 	{confirm('')} <- abre um pop-up de confirmação(ok/cancelar).
 	{prompt('')} <- abre um pop-up de digitação.
-
 	{var} <- atribui variáveis
+	{[Number.]parseInt(n)} <- converte para número inteiro
+	{parseFloat(n)} <- converte a variável (n) para número real
+	{Number(n)} <- Transforma a variável (n) para número, real ou inteiro, automático dependendo da ocasião
+	{String(n)} <- Transforma a variável (n) para string
+	{n.toString()} <- Transforma a variável (n) para string
+	(${}) <- Ao colocar ${} dentro de uma string é possível mostrar variáveis dentro das strings
 
-Tipos de variáveis
+Tipos de variáveis primitívos
 	Number <- são números inteiros ou reais
 	String <- são conjuntos de carácteres
 	boolean <- são variáveis lógicas | verdadeiro ou falso
