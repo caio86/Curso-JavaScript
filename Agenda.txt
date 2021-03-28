@@ -24,6 +24,14 @@ Comandos [] <- opcional {} <- comando
 	{n.toString()} <- Transforma a variável (n) para string
 	(${}) <- Ao colocar ${} dentro de uma string é possível mostrar variáveis dentro das strings
 
+	Formatação de Strings
+		{s.length} <- Diz quantos caracteres a string tem
+		{s.toUpperCase} <- Tudo para 'Maiúsculas'
+		{s.toLowerCase} <- Tudo para 'Minúsculas
+	Formatação de Números
+		{n1.toFixed(2)} <- Amostra o número n1, com 2 casas decimais
+		{n1.toLocaleString('pt-br', {style: 'currency', currency: 'brl'})} <- vai alterar a localização de uma string
+
 Tipos de variáveis primitívos
 	Number <- são números inteiros ou reais
 	String <- são conjuntos de carácteres
