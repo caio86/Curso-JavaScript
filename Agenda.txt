@@ -10,6 +10,9 @@ Sintaxe
 	"=" équivale a "recebe", sinal de atribuição
 	String fica dentro de aspas("",'',``)
 	"+" Faz uma junção lógica, ou adição dependendo da situação
+	Simplificação de auto-atribuição de variáveis numéricas
+		Isso funciona comm qualquer operador Aritméticos e em outras linguagens de programação
+		n = n + 4 == n += 4
 
 Comandos [] <- opcional {} <- comando
 	//, ou, /*{}*/ <- comentário
@@ -36,6 +39,29 @@ Tipos de variáveis primitívos
 	Number <- são números inteiros ou reais
 	String <- são conjuntos de carácteres
 	boolean <- são variáveis lógicas | verdadeiro ou falso
+
+Operadores
+	Ordem de precedência
+		() - primeiro
+		**
+		* | / | %
+		+ | - | - ultimo
+	Aritméticos
+		Adição(+)
+		5+2=7
+		Subtração(-)
+		5-2=3
+		Multiplicação(*)
+		5*2=10
+		Divisão real(/)
+		5/2=2.5
+		Resto da Divisão Inteira(%)
+		5%2=1
+		Poténcia(**)
+		5**2=25
+	Incremento
+		'++' <- soma uma unidade á variável
+		'--' <- subtrai uma unidade á variável
 
 Dicas
 	Variáveis
