@@ -9,6 +9,7 @@ Regras de identificadores
 Sintaxe
 	"=" équivale a "recebe", sinal de atribuição
 	String fica dentro de aspas("",'',``)
+	"!" équivale a "não" logicamente.
 	"+" Faz uma junção lógica, ou adição dependendo da situação
 	Simplificação de auto-atribuição de variáveis numéricas
 		Isso funciona comm qualquer operador Aritméticos e em outras linguagens de programação
@@ -42,26 +43,48 @@ Tipos de variáveis primitívos
 
 Operadores
 	Ordem de precedência
+
 		() - primeiro
 		**
 		* | / | %
 		+ | - | - ultimo
+
+		Ordem: Aritméticos -> Relacionais -> Lógicos -> Ternário
+
+		Lógicos: ! -> && -> ||
 	Aritméticos
-		Adição(+)
+		(+)Adição
 		5+2=7
-		Subtração(-)
+		(-)Subtração
 		5-2=3
-		Multiplicação(*)
+		(*)Multiplicação
 		5*2=10
-		Divisão real(/)
+		(/)Divisão real
 		5/2=2.5
-		Resto da Divisão Inteira(%)
+		(%)Resto da Divisão Inteira
 		5%2=1
-		Poténcia(**)
+		(**)Poténcia
 		5**2=25
 	Incremento
 		'++' <- soma uma unidade á variável
 		'--' <- subtrai uma unidade á variável
+	Relacionais
+		'>' <- Maior que
+		'<' <- Menor que
+		'>='<- Maior ou igual que
+		'<='<- Menor ou igual que
+		'=='<- Valores iguais
+		'!='<- Valores diferente
+		'==='<- Valores iguais e mesmo tipo
+		'!=='<- Tipos diferentes
+	Lógicos
+		'!' <- Valor lógico de "Não", inverte a operação lógica
+		'&&'<- Valor lógico de "e", resulta em verdadeiro quando recebe dois valores verdadeiro
+		'||'<- Valor lógico de "ou", resulta em verdadeiro quando recebe pelo menos um valor verdadeiro
+	Ternário
+		Retorna um de dois valores dependo do resultado do valor lógico do teste
+		Sintaxe: "teste-lógico ? 'True' : 'False'"
+		Ex: média>=7.0?"Aprovado":"Reprovado"
 
 Dicas
 	Variáveis
