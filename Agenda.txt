@@ -28,6 +28,14 @@ Comandos [] <- opcional {} <- comando
 	{n.toString()} <- Transforma a variável (n) para string
 	(${}) <- Ao colocar ${} dentro de uma string é possível mostrar variáveis dentro das strings
 
+	Métodos de Acesso
+		{getElementsByTagName('')[x]} <- seleciona elementos através da Tag
+		{getElementById('')} <- seleciona elementos através do id único
+		{getElementsByName('')[]} <- seleciona elementos através do nome
+		{getElementsByClassName('')[]} <- seleciona elementos através da classe
+		{querySelector('div.class')} <- seleciona elementos através de identificadores em sintaxe de css
+		{querySelectorAll('')}
+
 	Formatação de Strings
 		{s.length} <- Diz quantos caracteres a string tem
 		{s.toUpperCase} <- Tudo para 'Maiúsculas'
@@ -86,6 +94,22 @@ Operadores
 		Sintaxe: "teste-lógico ? 'True' : 'False'"
 		Ex: média>=7.0?"Aprovado":"Reprovado"
 
+Arvore DOM
+	window <- raiz da Arvore DOM, possui todos os objetos do site.
+		location <- localização do site. (url, pagina atual, pagina anterior, etc.)
+		document <- documento atual.
+			html
+				head
+					meta
+					title
+				body
+					h1
+					p
+					p
+						strong
+					div
+		history <- histórico de navegação no site.
+
 Dicas
 	Variáveis
 		Maiúsculas e minúsculas fazem diferença
@@ -109,3 +133,6 @@ Anotações
 	Java é diferente de JavaScript, mas ambas são criadas a partir da linguagem C.
 
 	ECMAScript é a versão padronizada do JavaScript.
+
+
+	DOM = Document Object Model
