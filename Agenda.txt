@@ -14,6 +14,7 @@ Sintaxe
 	Simplificação de auto-atribuição de variáveis numéricas
 		Isso funciona comm qualquer operador Aritméticos e em outras linguagens de programação
 		n = n + 4 == n += 4
+	function (parâmetros){Comandos} <- essa é a sintaxe de uma função
 
 Comandos [] <- opcional {} <- comando
 	//, ou, /*{}*/ <- comentário
