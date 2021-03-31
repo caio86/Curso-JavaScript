@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Vivendo em: <input type="text" name="nac" id="nac" placeholder="Sua nacionalidade" size="12"> <input type="button" value="Verificar" onclick="suaNasc()"></p>
+    <div>
+        <p id="res"></p>
+    </div>
+    <script>
+            var txt = document.getElementById('nac')
+            var res = document.querySelector('p#res')
+            function suaNasc() {
+                if (txt.value.toLowerCase() == 'brasil') {
+                    res.innerText = 'Você é Brasileiro!'
+                } else {
+                    res.innerText = 'Você é Estrangeiro!'
+                }
+                console.log(txt.value.toLowerCase())
+            }
+    </script>
+</body>
+</html>
