@@ -12,10 +12,10 @@ Sintaxe
 	"!" équivale a "não" logicamente.
 	"+" Faz uma junção lógica, ou adição dependendo da situação
 	Simplificação de auto-atribuição de variáveis numéricas
-		Isso funciona comm qualquer operador Aritméticos e em outras linguagens de programação
+		Isso funciona com qualquer operador Aritméticos e em outras linguagens de programação
 		n = n + 4 == n += 4
 	function (parâmetros){Comandos} <- essa é a sintaxe de uma função
-	Eventos DOM <- são colocados como parametros de uma tag HTML para chamar uma função
+	Eventos DOM <- são colocados como parâmetros de uma tag HTML para chamar uma função
 		Ex: onclick, onmousemove, onmouseout, etc...
 		onclick(NomedaFunção()) <- sintaxe
 
@@ -24,13 +24,18 @@ Comandos [] <- opcional {} <- comando
 	{alert('')} <- abre um pop-up de mensagem.
 	{confirm('')} <- abre um pop-up de confirmação(ok/cancelar).
 	{prompt('')} <- abre um pop-up de digitação.
-	{var} <- atribui variáveis
+	{var ${nome da variável} = {valor}} <- atribui variáveis
 	(${}) <- Ao colocar ${} dentro de uma string é possível mostrar variáveis dentro das strings
 	{console.log()} <- Escreve no console
 
 	Estruturas Condicionais
-		if() {} <- Estrutura condicional 'se'
+		if(Condição) {} <- Estrutura condicional 'se'
 			else {} <- Estrutura condicional 'senão'
+		switch(expressão) {case ${valor 1}:; etc...} <- O switch testará uma expressão e executará um case que tenha o resultado da expressão, caso não haja tal case, o default será executado.
+			case {valor n}: <- 
+				break <- Obrigatório em cada case, e no default
+			default: <- procedimento padrão caso nenhum dos cases tiver o valor da expressão
+
 
 	Converter variáveis
 		{[Number.]parseInt(n)} <- converte para número inteiro
@@ -105,7 +110,7 @@ Operadores
 		Sintaxe: "teste-lógico ? 'True' : 'False'"
 		Ex: média>=7.0?"Aprovado":"Reprovado"
 
-Tipos de Condição
+Tipos de Estruturas de Condição
 	Condição simples <- usa apenas o if(){}
 		if(){
 			bloco de comandos
@@ -116,6 +121,17 @@ Tipos de Condição
 		} else {
 			bloco de comandos
 		}
+	Condição Aninhada <- Quando há uma ou mais Condições compostas juntas
+		if() {
+			bloco de comandos
+		} else {
+			if() {
+				bloco de comandos
+			} else {
+				bloco de comandos
+			}
+		}
+	Condição Múltipla
 
 Arvore DOM
 	window <- raiz da Arvore DOM, possui todos os objetos do site.
