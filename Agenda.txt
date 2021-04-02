@@ -36,6 +36,8 @@ Comandos [] <- opcional {} <- comando
 				break <- Obrigatório em cada case, e no default
 			default: <- procedimento padrão caso nenhum dos cases tiver o valor da expressão
 
+	Estruturas de Repetições
+		while(expressão) {} <- Estrutura de repetição 'enquanto' | Enquanto a expressão for verdadeira, ele irá repetir o bloco de comandos
 
 	Converter variáveis
 		{[Number.]parseInt(n)} <- converte para número inteiro
@@ -122,16 +124,30 @@ Tipos de Estruturas de Condição
 			bloco de comandos
 		}
 	Condição Aninhada <- Quando há uma ou mais Condições compostas juntas
-		if() {
+		if(Condição) {
 			bloco de comandos
 		} else {
-			if() {
+			if(Condição) {
 				bloco de comandos
 			} else {
 				bloco de comandos
 			}
 		}
-	Condição Múltipla
+	Condição Múltipla <- usa o switch(){} em conjunto com o case e o default
+		switch(expressão) {
+			case n1:
+				bloco de comandos
+				break
+			case n2:
+				bloco de comandos
+				break
+			case n3:
+				bloco de comandos
+				break
+			default:
+				bloco de comandos
+				break
+		}
 
 Arvore DOM
 	window <- raiz da Arvore DOM, possui todos os objetos do site.
