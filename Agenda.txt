@@ -37,7 +37,18 @@ Comandos [] <- opcional {} <- comando
 			default: <- procedimento padrão caso nenhum dos cases tiver o valor da expressão
 
 	Estruturas de Repetições
-		while(expressão) {} <- Estrutura de repetição 'enquanto' | Enquanto a expressão for verdadeira, ele irá repetir o bloco de comandos
+		while(expressão) {} <- Estrutura de repetição 'enquanto' | Enquanto a expressão for verdadeira, ele irá repetir o bloco de comandos, Faz o teste lógico no começo da estrutura
+			while(expressão) {
+
+			}
+		do {} while() Enquanto a expressão for verdadeira, ele irá repetir o bloco de comandos, Faz o teste lógico no fim da estrutura
+			do {
+
+			} while(expressão)
+		for(inicialização;teste lógico;incremento){} <- Enquanto a expressão for verdadeira, ele irá repetir o bloco, e faz o incremento da variável, Faz o teste lógico no começo da estrutura
+			for (var c=1;c<=10;c++) {
+
+			}
 
 	Converter variáveis
 		{[Number.]parseInt(n)} <- converte para número inteiro
