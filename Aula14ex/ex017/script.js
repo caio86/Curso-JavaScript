@@ -1,10 +1,30 @@
 function tabuada() {
-    var tab = Number(document.getElementById('txttab').value)
-    var res = document.querySelector('div#res')
-    var val = 1
-    res.innerHTML = ""
-    for (var c=1;c<=10;c++) {
-        val = tab*c
-        res.innerHTML += `${tab}x${c}=${val}<br>`
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+    let res = document.querySelector('div#res')
+    
+    if (num.value.length == 0) {
+        window.alert('Por favor, digite um número!')
+    } else {
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while (c <= 10) {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        }
     }
+
+
+    /*
+    for (let c=1;c<=10;c++) {
+        let item = document.createElement('option')
+        item.text = `${n} x ${c} = ${n*c}`
+        item.value = `tab${c}`
+        tab.appendChild(item)
+    }
+    */
 }
