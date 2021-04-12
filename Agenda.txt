@@ -28,6 +28,16 @@ Comandos [] <- opcional {} <- comando
 	(${}) <- Ao colocar ${} dentro de uma string é possível mostrar variáveis dentro das strings
 	{console.log()} <- Escreve no console
 
+	variáveis Compostas
+		Array
+			{num.push(7)} <- acrescenta o valor 7 ao próximo elemento não usado de uma Array
+			{num.length} <- diz a quantidade de elementos de uma Array
+			{num.sort()} <- ordena os elementos da Array em ordem crescente
+			{num.indexOf(7)} <-
+
+			for(${variável} in ${Array}) {} <- Estrutura de repetição para Array/Object, onde ela armazena em ${variável} o índice do ${Array} um por um
+				for (let pos in num) {}
+
 	Estruturas Condicionais
 		if(Condição) {} <- Estrutura condicional 'se'
 			else {} <- Estrutura condicional 'senão'
@@ -41,10 +51,12 @@ Comandos [] <- opcional {} <- comando
 			while(expressão) {
 
 			}
+
 		do {} while() Enquanto a expressão for verdadeira, ele irá repetir o bloco de comandos, Faz o teste lógico no fim da estrutura
 			do {
 
 			} while(expressão)
+
 		for(inicialização;teste lógico;incremento){} <- Enquanto a expressão for verdadeira, ele irá repetir o bloco, e faz o incremento da variável, Faz o teste lógico no começo da estrutura
 			for (var c=1;c<=10;c++) {
 
@@ -74,6 +86,12 @@ Comandos [] <- opcional {} <- comando
 		{n1.toLocaleString('pt-br', {style: 'currency', currency: 'brl'})} <- vai alterar a localização de uma string
 
 Tipos de variáveis primitívos
+	Variáveis Simples <- Só conseguem armazenar um valor por vez
+		var ${nome} = ${valor}
+	Variáveis Compostas <- conseguem armazenar vários valores em uma mesma estrutura
+		Array(vetor) <- Um vetor é composto por elementos que possuem valores e estão ligados a um índice/chave
+			var ${nome} = [${valor-1}, ${valor-2}, ...]
+				${nome}[0] == ${valor-1}
 	Number <- são números inteiros ou reais
 	String <- são conjuntos de carácteres
 	boolean <- são variáveis lógicas | verdadeiro ou falso
