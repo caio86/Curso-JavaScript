@@ -18,15 +18,21 @@ Sintaxe
 	Eventos DOM <- são colocados como parâmetros de uma tag HTML para chamar uma função
 		Ex: onclick, onmousemove, onmouseout, etc...
 		onclick(NomedaFunção()) <- sintaxe
+	${} <- pode ser usado para inserir o valor de uma variável em uma string, apenas ``
 
 Comandos [] <- opcional {} <- comando
 	//, ou, /*{}*/ <- comentário
 	{alert('')} <- abre um pop-up de mensagem.
 	{confirm('')} <- abre um pop-up de confirmação(ok/cancelar).
 	{prompt('')} <- abre um pop-up de digitação.
-	{var ${nome da variável} = {valor}} <- atribui variáveis
 	(${}) <- Ao colocar ${} dentro de uma string é possível mostrar variáveis dentro das strings
 	{console.log()} <- Escreve no console
+	{console.error()} <- Escreve no console como erro
+
+	Declaração de variáveis
+		{var ${nome} = ${valor}} <- Declara variáveis, e atribui um ${valor}(não é Obrigatório definir um valor na mesma linha), com escopo de função
+		{let ${nome} = ${valor}} <- Declara variáveis, e atribui um ${valor}(não é Obrigatório definir um valor na mesma linha), com escopo de bloco, dentro de chaves {}
+		{const ${nome} = ${valor}} <- Declara variáveis, e atribui um ${valor}(é Obrigatório definir um valor nesta mesma linha), com escopo de bloco, e não pode ser alterado em outra linha, porém pode alterar os valores do objetos ou Arrays dá variável
 
 	variáveis Compostas
 		Array
