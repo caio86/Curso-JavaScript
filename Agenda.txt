@@ -147,6 +147,26 @@ Operadores
 		Sintaxe: "teste-lógico ? 'True' : 'False'"
 		Ex: média>=7.0?"Aprovado":"Reprovado"
 
+Estrutura de uma Função
+	São ***ações*** executadas assim que são **chamadas** ou em decorrência de algum **evento**.
+	Uma ***função*** pode receber **parâmetros** e retornar um **resultado**.
+
+	nome <- oque será usado para chamar a função
+
+	Parâmetro[opcional] <- Variáveis que só podem ser usadas na função, e recebem o valor definido na chamada da função, é possível também atribuir um valor padrão para os parâmetros usando [${parâmetro}=${valor}]
+
+	ação <- bloco de comandos da função
+
+	Return[opcional] <- Retornará um valor no local da chamada da função, somente um return pode ser executado, mas pode existir mais de um dentro de uma função
+
+	chamada <- usado para acionar a função, para se chamar uma função usa-se ${nome(parâmetros[opcional])}
+
+	Estrutura
+		function ${nome}(${parâmetro}){
+			return res
+		}
+		[nome(5)] <- chamada
+
 Tipos de Estruturas de Condição
 	Condição simples <- usa apenas o if(){}
 		if(){
