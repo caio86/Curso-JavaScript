@@ -87,6 +87,7 @@ Comandos [] <- opcional {} <- comando
 		{s.length} <- Diz quantos caracteres a string tem
 		{s.toUpperCase} <- Tudo para 'Maiúsculas'
 		{s.toLowerCase} <- Tudo para 'Minúsculas
+
 	Formatação de Números
 		{n1.toFixed(2)} <- Amostra o número n1, com 2 casas decimais
 		{n1.toLocaleString('pt-br', {style: 'currency', currency: 'brl'})} <- vai alterar a localização de uma string
@@ -95,9 +96,13 @@ Tipos de variáveis primitívos
 	Variáveis Simples <- Só conseguem armazenar um valor por vez
 		var ${nome} = ${valor}
 	Variáveis Compostas <- conseguem armazenar vários valores em uma mesma estrutura
-		Array(vetor) <- Um vetor é composto por elementos que possuem valores e estão ligados a um índice/chave
+		Array(vetor) <- Um vetor é composto por elementos que possuem valores e estão ligados a um índice/chave numérico
 			var ${nome} = [${valor-1}, ${valor-2}, ...]
 				${nome}[0] == ${valor-1}
+		Object(objeto) <- Um objeto é composto por atributos que possuem valores, e estes atributos possuem identificadores personalizados
+			var ${nome} = {
+				${nome do atributo}:${valor},${atributo}:${valor}
+				}
 	Number <- são números inteiros ou reais
 	String <- são conjuntos de carácteres
 	boolean <- são variáveis lógicas | verdadeiro ou falso
