@@ -1,0 +1,13 @@
+Aprofundar o estudo de funções
+
+começar a estudar objetos
+
+aprender modularização
+
+aprender RegEx
+
+aprender JSON
+
+olhar AJAX
+
+olhar NodeJS p/ servidor
