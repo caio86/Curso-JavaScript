@@ -1,0 +1,8 @@
+body {
+    font-family: arial;
+    filter: brightness();
+}
+
+input {
+    padding: 16px;
+}
